@@ -21,17 +21,19 @@ const addNewTask = () => {
 </script>
 
 <template>
-  <h1>Todo App</h1>
-  <input
-    type="text"
-    v-model="todoStore.userTaskInput"
-    @keyup.enter="addNewTask"
-  />
-  <ul>
-    <li v-for="task in todoStore.taskList" :key="task.id">
-      {{ task.label }}
-    </li>
-  </ul>
+  <div>
+    <h1>Todo App</h1>
+    <input
+      type="text"
+      v-model="todoStore.userTaskInput"
+      @keyup.enter="addNewTask"
+    />
+    <ul>
+      <li v-for="task in todoStore.taskList" :key="task.id">
+        {{ task.label }}
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style></style>
