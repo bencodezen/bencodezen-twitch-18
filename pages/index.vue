@@ -3,7 +3,9 @@ export default {}
 </script>
 
 <template>
-  <h1>Home Page</h1>
+  <div>
+    <h1>Home Page</h1>
+  </div>
 </template>
 
 <style></style>
